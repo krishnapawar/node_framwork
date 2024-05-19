@@ -1,0 +1,30 @@
+{
+  "name": "new_node_ex_pro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon -r esm server.js",
+    "start": "node -r esm server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@krishnapawar/kp-mysql-models": "^1.4.0",
+    "bcrypt": "^5.1.0 || latest",
+    "cors": "^2.8.5 || latest",
+    "dotenv": "^16.0.3 || latest",
+    "esm": "^3.2.25 || latest",
+    "express": "^4.18.2 || latest",
+    "joi": "^17.7.0 || latest",
+    "jsonwebtoken": "^9.0.0 || latest",
+    "mongoose": "^6.9.0",
+    "multer": "latest",
+    "mysql": "latest"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

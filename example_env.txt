@@ -1,0 +1,19 @@
+PORT=8080
+DEBUG=false
+
+
+
+# JWT Token Secret
+JWT_SECRET="Secret"
+
+# data base connection
+
+# MONGOOSE Conection url
+MongoDB_URL=''
+
+# MYSQL Conection
+CONNECTION_Limit=10,
+HOST="localhost",
+USER="root",
+PASSWORD="",
+DATABASE="healthcardb",
