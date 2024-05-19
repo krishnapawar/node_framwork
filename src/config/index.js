@@ -2,9 +2,11 @@ import dotenv from "dotenv";
 
 dotenv.config();
 export const {
-    PORT,
-
-    DEBUG,
+    APP_NAME,
+    APP_URL,
+    APP_ENV,
+    APP_PORT,
+    APP_DEBUG,
 
     JWT_SECRET,
 

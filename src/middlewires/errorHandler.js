@@ -1,14 +1,15 @@
-import { DEBUG } from "../config";
+import { APP_DEBUG } from "../config";
 import { ValidationError } from "joi";
 import CustomErrorHandler from "../services/CustomErrorHandler";
 const errorHandler = (err,req,res,next)=>{ 
     
     let statusCode = 500;
     let data ={
+        status:false,
         message:'Internal server error',
-        ...(DEBUG==='true' && {originalError:err.message}) 
+        ...(APP_DEBUG==='true' && {originalError:err.message}) 
     }
-    if (DEBUG==='true') {
+    if (APP_DEBUG==='true') {
         console.log(err);
     }
     if (err instanceof ValidationError) {
